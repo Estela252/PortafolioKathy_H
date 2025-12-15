@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Diseñador UX/UI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-box">
+                    <img src="Print.svg" alt="Logo Personal" class="logo-img">
+                </div>
+                <span class="logo-text" data-es="Mi Portafolio" data-en="My Portfolio">Mi Portafolio</span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-menu">
+                <a href="#inicio" class="nav-item" data-es="Inicio" data-en="Home">
+                    <span class="nav-icon"></span>
+                    <span>Inicio</span>
+                </a>
+                <a href="#sobre-mi" class="nav-item" data-es="Sobre Mí" data-en="About Me">
+                    <span class="nav-icon"></span>
+                    <span>Sobre Mí</span>
+                </a>
+                <a href="#habilidades" class="nav-item" data-es="Habilidades" data-en="Skills">
+                    <span class="nav-icon"></span>
+                    <span>Habilidades</span>
+                </a>
+                <a href="#proyectos" class="nav-item" data-es="Proyectos" data-en="Projects">
+                    <span class="nav-icon"></span>
+                    <span>Proyectos</span>
+                </a>
+                <a href="#experiencia" class="nav-item" data-es="Experiencia" data-en="Experience">
+                    <span class="nav-icon"></span>
+                    <span>Experiencia</span>
+                </a>
+                <a href="#contacto" class="nav-item" data-es="Contacto" data-en="Contact">
+                    <span class="nav-icon"></span>
+                    <span>Contacto</span>
+                </a>
+            </div>
+
+            <!-- Language Toggle & Mobile Menu -->
+            <div class="nav-right">
+                <button class="lang-toggle" onclick="toggleLanguage()">
+                    <span class="lang-icon">🌐</span>
+                    <span class="lang-text">ES</span>
+                </button>
+                <button class="mobile-toggle" onclick="toggleMobileMenu()">
+                    <span class="hamburger">☰</span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="#inicio" class="mobile-item" data-es="Inicio" data-en="Home">
+                    <span class="nav-icon"></span>
+                    <span>Inicio</span>
+                </a>
+                <a href="#sobre-mi" class="mobile-item" data-es="Sobre Mí" data-en="About Me">
+                    <span class="nav-icon"></span>
+                    <span>Sobre Mí</span>
+                </a>
+                <a href="#habilidades" class="mobile-item" data-es="Habilidades" data-en="Skills">
+                    <span class="nav-icon"></span>
+                    <span>Habilidades</span>
+                </a>
+                <a href="#proyectos" class="mobile-item" data-es="Proyectos" data-en="Projects">
+                    <span class="nav-icon"></span>
+                    <span>Proyectos</span>
+                </a>
+                <a href="#experiencia" class="mobile-item" data-es="Experiencia" data-en="Experience">
+                    <span class="nav-icon"></span>
+                    <span>Experiencia</span>
+                </a>
+                <a href="#contacto" class="mobile-item" data-es="Contacto" data-en="Contact">
+                    <span class="nav-icon"></span>
+                    <span>Contacto</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-content">
+            <img src="logo.png" alt="Foto de perfil" class="hero-image">
+            <h1 class="hero-title">
+                <span data-es="Hola, soy" data-en="Hi, I'm">Hola, soy</span> 
+                <span class="hero-highlight">Katerin Hernández</span>
+            </h1>
+            <p class="hero-description" data-es="Diseñadora UX/UI dedicada a crear experiencias digitales intuitivas y hermosas. Transformo ideas en interfaces que los usuarios aman." data-en="UX/UI designer dedicated to creating intuitive and beautiful digital experiences. I transform ideas into interfaces that users love.">
+                Diseñadora UX/UI dedicada a crear experiencias digitales intuitivas y hermosas. Transformo ideas en interfaces que los usuarios aman.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" data-es="Contáctame" data-en="Contact Me">
+                    <span></span> Contáctame
+                </button>
+    <a 
+    id="download-cv-link" 
+    href="CV-ES.pdf" 
+    download="Katerin-Hernandez-CV-UXUI.pdf"
+    class="btn btn-secondary"
+    data-cv-es="CV-ES.pdf"  data-cv-en="CV-EN.pdf"  >
+    <span 
+        data-es=" Descargar CV" 
+        data-en=" Download CV"
+    >
+         Descargar CV
+    </span>
+</a>
+            </div>
+        <div class="hero-socials">
+            <a href="https://github.com/Estela252" class="social-link" title="GitHub">
+                <i class="fab fa-github-alt"></i> </a>
+    
+            <a href="https://www.linkedin.com/in/estela-hernandez-4788352b5/" class="social-link" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+    
+            <a href="mailto:stellahernandez912@gmail.com" class="social-link" title="Email">
+                <i class="far fa-envelope"></i> 
+            </a>
+    
+    </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-mi" class="about-section">
+        <div class="section-header">
+            <h2 class="section-title" data-es="Sobre Mí" data-en="About Me">Sobre Mí</h2>
+            <p class="section-subtitle" data-es="Mi enfoque en el diseño centrado en el usuario" data-en="My approach to user-centered design">
+                Mi enfoque en el diseño centrado en el usuario
+            </p>
+        </div>
+        <div class="about-content">
+            <img src="portafolio.jpg" alt="Trabajando" class="about-image">
+            <div class="about-text">
+                <p class="about-description" data-es="Recién egresada de Ingeniería en Sistemas y Redes Informáticas a mis 21 años, cuento con experiencia práctica en el ciclo completo de desarrollo de software. Demuestro un historial comprobado como Líder de Desarrollo, Analista, Diseñadora UX/UI y Q/A Tester en proyectos universitarios, lo que subraya mi capacidad para gestionar tareas múltiples y aplicar un enfoque analítico riguroso. Poseo un perfil proactivo, perfeccionista y orientado al futuro, que valora la colaboración, el liderazgo efectivo y la actualización continua de conocimientos tecnológicos. Mi compromiso es aportar excelencia y capacidad de respuesta en entornos dinámicos para alcanzar y superar los objetivos organizacionales." data-en="Recently graduated with a degree in Systems Engineering and Computer Networks at 21 years old, I possess practical experience in the complete software development lifecycle. I demonstrate a proven track record as a Development Leader, Analyst, UX/UI Designer, and Q/A Tester in university projects, highlighting my capacity for managing multiple tasks and applying a rigorous analytical approach. I have a proactive, perfectionist, and future-oriented profile that values collaboration, effective leadership, and continuous technological knowledge update. My commitment is to deliver excellence and responsiveness in dynamic environments to meet and exceed organizational goals.">
+                    Recién egresada de Ingeniería en Sistemas y Redes Informáticas a mis 21 años, cuento con experiencia práctica en el ciclo completo de desarrollo de software. Demuestro un historial comprobado como Líder de Desarrollo, Analista, Diseñadora UX/UI y Q/A Tester en proyectos universitarios, lo que subraya mi capacidad para gestionar tareas múltiples y aplicar un enfoque analítico riguroso. Poseo un perfil proactivo, perfeccionista y orientado al futuro, que valora la colaboración, el liderazgo efectivo y la actualización continua de conocimientos tecnológicos. Mi compromiso es aportar excelencia y capacidad de respuesta en entornos dinámicos para alcanzar y superar los objetivos organizacionales.
+                </p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label" data-es="Proyectos Completados" data-en="Completed Projects">
+                            Proyectos Completados
+                        </div>
+                    </div>
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="habilidades" class="skills-section">
+        <div class="section-header">
+            <h2 class="section-title" data-es="Habilidades de Diseño" data-en="Design Skills">Habilidades de Diseño</h2>
+            <p class="section-subtitle" data-es="Herramientas y metodologías que utilizo para crear experiencias de usuario excepcionales" data-en="Tools and methodologies I use to create exceptional user experiences">
+                Herramientas y metodologías que utilizo para crear experiencias de usuario excepcionales
+            </p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon fas fa-code"></div>
+                <h3 class="skill-title" data-es="Diseño de UI" data-en="UI Design">UI Design</h3>
+                <p class="skill-desc" data-es="Diseño visual de interfaces modernas y atractivas" data-en="Design of modern and attractive interfaces">
+                    Diseño visual de interfaces modernas y atractivas
+                </p>
+                <div class="skill-tags">
+                    <span data-es="Figma" data-en="Figma">Figma</span>
+                    <span data-es="Adobe Creative Suite" data-en="Adobe Creative Suite">Adobe</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon fas fa-users"></div>
+                <h3 class="skill-title" data-es="Investigación UX" data-en="UX Research">UX Research</h3>
+                <p class="skill-desc" data-es="Investigación de usuarios y validación de ideas" data-en="User research and idea validation">
+                    Investigación de usuarios y validación de ideas
+                </p>
+                <div class="skill-tags">
+                    <span data-es="Entrevistas" data-en="Interviews">Entrevistas</span>
+                    <span data-es="Encuestas" data-en="Surveys">Encuestas</span>
+                    <span data-es="Pruebas" data-en="Testing">Pruebas</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon far fa-lightbulb"></div>
+                <h3 class="skill-title" data-es="Ideación" data-en="Ideation">Ideación</h3>
+                <p class="skill-desc" data-es="Generación y concepto de soluciones innovadoras" data-en="Generation and concept of innovative solutions">
+                    Generación y concepto de soluciones innovadoras
+                </p>
+                <div class="skill-tags">
+                    <span data-es="Lluvia de Ideas" data-en="Brainstorming">Lluvia de Ideas</span>
+                    <span data-es="Viajes del Usuario" data-en="User Journeys">Viajes del Usuario</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon fas fa-bolt"></div>
+                <h3 class="skill-title" data-es="Prototipado" data-en="Prototyping">Prototipado</h3>
+                <p class="skill-desc" data-es="Creación de prototipos interactivos y de alta fidelidad" data-en="Creation of interactive and high-fidelity prototypes">
+                    Creación de prototipos interactivos y de alta fidelidad
+                </p>
+                <div class="skill-tags">
+                    <span data-es="Interactividad" data-en="Interactive">Interactividad</span>
+                    <span data-es="Animación" data-en="Animation">Animation</span>
+                    <span data-es="Diseño de Movimiento" data-en="Motion Design">Diseño de Movimiento</span>
+                </div>
+            </div> 
+
+            <div class="skill-card">
+                <div class="skill-icon fas fa-laptop"></div>
+                <h3 class="skill-title" data-es="Analytics" data-en="Analytics">Analytics</h3>
+                <p class="skill-desc" data-es="Análisis de datos y métricas de UX" data-en="Analysis of UX data and metrics">
+                    Análisis de datos y métricas de UX
+                </p>
+                <div class="skill-tags">
+                    <span data-es="Google Analytics" data-en="Google Analytics">Google Analytics</span>
+                    <span data-es="Seguimiento de KPI" data-en="KPI Tracking">Seguimiento de KPI</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon fas fa-chart-bar"></div>
+                <h3 class="skill-title" data-es="Front-end Basics" data-en="Front-end Basics">Front-end Basics</h3>
+                <p class="skill-desc" data-es="Conocimientos básicos de desarrollo web" data-en="Basic knowledge of web development">
+                    Conocimientos básicos de desarrollo web
+                </p>
+                <div class="skill-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="proyectos" class="projects-section">
+        <div class="section-header">
+            <h2 class="section-title" data-es="Proyectos Destacados" data-en="Featured Projects">Proyectos Destacados</h2>
+            <p class="section-subtitle" data-es="Selección de mis trabajos de diseño más recientes y significativos" data-en="Selection of my most recent and significant design work">
+                Selección de mis trabajos de diseño más recientes y significativos
+            </p>
+        </div>
+        <div class="projects-grid">
+    
+    <div class="project-card">
+        <div class="card-image-box">
+            <img src="spinositos.png" alt="E-commerce Spinosito's" class="project-img">
+            <div class="card-overlay">
+                <a href="https://spinosito.com/" class="btn-view" data-es="Ver Caso de Estudio" data-en="View Case Study">Ver Caso de Estudio</a>
+            </div>
+        </div>
+
+        <div class="card-content-box">
+            <h3 class="project-title" data-es="E-commerce Spinosito's" data-en="Spinosito's E-commerce">
+                E-commerce Spinosito's
+            </h3>
+            <p class="project-desc" data-es="Diseño de plataforma E-commerce enfocada en productos naturales..." data-en="E-commerce platform design focused on natural products...">
+                Diseño de plataforma E-commerce enfocada en productos naturales para el cuidado de la piel. Se priorizó la usabilidad y la marca sostenible.
+            </p>
+            <div class="project-tags">
+                <span data-es="Figma" data-en="Figma">Figma</span>
+                <span data-es="Diseño Web" data-en="Web Design">Diseño Web</span>
+                <span data-es="E-commerce" data-en="E-commerce">E-commerce</span>
+                <span data-es="Diseño UI/UX" data-en="UI/UX Design">Diseño UI/UX</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card">
+    <div class="card-image-box">
+        <img src="tecno.png" alt="Plataforma E-commerce Tecnoavans" class="project-img">
+        
+        <div class="card-overlay">
+            <a href="https://www.figma.com/proto/RyIkkzXOgjIWfWY2uyYbd5/Untitled?node-id=37-49" class="btn-view" data-es="Ver Caso de Estudio" data-en="View Case Study">Ver Caso de Estudio</a>
+        </div>
+    </div>
+
+    <div class="card-content-box">
+        <h3 class="project-title" 
+            data-es="E-commerce Tecnoavans" 
+            data-en="Tecnoavans E-commerce Platform">
+            E-commerce Tecnoavans
+        </h3>
+        
+        <p class="project-desc" 
+           data-es="Diseño de plataforma de comercio electrónico enfocado en productos de tecnología para impulsar la productividad y conectividad." 
+           data-en="E-commerce platform design focused on technology products to boost productivity and connectivity.">
+            
+            Diseño de plataforma de comercio electrónico enfocado en productos de tecnología para impulsar la productividad y conectividad.
+        </p>
+        
+        <div class="project-tags">
+            <span data-es="Figma" data-en="Figma">Figma</span>
+            <span data-es="Diseño Web" data-en="Web Design">Diseño Web</span>
+            <span data-es="E-commerce" data-en="E-commerce">E-commerce</span>
+            <span data-es="Diseño UI/UX" data-en="UI/UX Design">Diseño UI/UX</span>
+        </div>
+    </div>
+</div>
+<div class="project-card">
+    <div class="card-image-box">
+        <img src="lectura.png" alt="App de Lectura y Cuentos" class="project-img">
+        
+        <div class="card-overlay">
+            <a href="https://www.figma.com/design/Y5eJtyIOXHqdmwfOxpnHj4/Child-Reading?node-id=0-1&p=f&t=iydCAvNQAnYpyP5i-0" class="btn-view" data-es="Ver Caso de Estudio" data-en="View Case Study">Ver Caso de Estudio</a>
+        </div>
+    </div>
+
+    <div class="card-content-box">
+        <h3 class="project-title" 
+            data-es="App de Cuentos y Lectura" 
+            data-en="Reading and Stories App">
+            App de Cuentos y Lectura
+        </h3>
+        
+        <p class="project-desc" 
+           data-es="Diseño de aplicación móvil enfocado en la usabilidad y la creación de una interfaz atractiva para niños y jóvenes." 
+           data-en="Mobile application design focused on usability and creating an attractive interface for children and young users.">
+            
+            Diseño de aplicación móvil enfocado en la usabilidad y la creación de una interfaz atractiva para niños y jóvenes.
+        </p>
+        
+        <div class="project-tags">
+            <span data-es="Figma" data-en="Figma">Figma</span>
+            <span data-es="Diseño Móvil" data-en="Mobile Design">Diseño Móvil</span>
+            <span data-es="Usabilidad" data-en="Usability">Usabilidad</span>
+            <span data-es="Diseño UI/UX" data-en="UI/UX Design">Diseño UI/UX</span>
+        </div>
+    </div>
+</div>
+           
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experiencia" class="experience-section">
+        <div class="section-header">
+            <h2 class="section-title" data-es="Experiencia y Educación" data-en="Experience & Education">Experiencia y Educación</h2>
+            <p class="section-subtitle" data-es="Mi trayectoria profesional y formación académica" data-en="My professional journey and academic background">
+                Mi trayectoria profesional y formación académica
+            </p>
+        </div>
+       <div class="timeline-item">
+        <div class="timeline-icon education">📄</div> 
+        <div class="timeline-card">
+            <div class="timeline-header">
+                <h3 class="timeline-title" 
+                    data-es="Certificación: Diseño de Interfaces de Usuario UX/UI" 
+                    data-en="Certification: UX/UI User Interface Design">
+                    Certificación: Diseño de Interfaces de Usuario UX/UI
+                </h3>
+                <span class="timeline-period" 
+                    data-es="Abril 2023" 
+                    data-en="April 2023">
+                    Abril 2023
+                </span>
+            </div>
+            <p class="timeline-company">Universidad Gerardo Barrios (UGB)</p>
+            <p class="timeline-desc" 
+                data-es="Finalización exitosa del taller de 8 horas, impartido por la Asociación de Estudiantes de Computación. Enfocado en la creación de interfaces centradas en el usuario." 
+                data-en="Successfully completed the 8-hour workshop, imparted by the Computer Science Students' Association. Focused on creating user-centered interfaces.">
+                Finalización exitosa del taller de 8 horas, impartido por la Asociación de Estudiantes de Computación.
+            </p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <div class="timeline-icon education">🥇</div> <div class="timeline-card">
+            <div class="timeline-header">
+                <h3 class="timeline-title" 
+                    data-es="Premio: Primer Lugar - Competencia Workbot" 
+                    data-en="Award: First Place - Workbot Competition">
+                    Premio: Primer Lugar - Competencia Workbot
+                </h3>
+                <span class="timeline-period" 
+                    data-es="Abril 2024" 
+                    data-en="April 2024">
+                    Abril 2024
+                </span>
+            </div>
+            <p class="timeline-company">Universidad Gerardo Barrios (UGB) - Feria FLISOL</p>
+            <p class="timeline-desc" 
+                data-es="Primer lugar en la competencia de 'Carros Seguidores en línea' (Workbot). Demostración práctica de habilidades en robótica y programación embebida." 
+                data-en="First place in the 'Line-Following Robot' (Workbot) competition. Practical demonstration of skills in robotics and embedded programming.">
+                Primer lugar en la competencia de 'Carros Seguidores en línea' (Workbot).
+            </p>
+        </div>
+    </div>
+
+            
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact-section">
+        <div class="section-header">
+            <h2 class="section-title" data-es="Contacto" data-en="Contact">Contacto</h2>
+            <p class="section-subtitle" data-es="¿Tienes un proyecto en mente? ¡Hablemos y hagámoslo realidad!" data-en="Have a project in mind? Let's talk and make it happen!">
+                ¿Tienes un proyecto en mente? ¡Hablemos y hagámoslo realidad!
+            </p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3 class="contact-info-title" data-es="Información de Contacto" data-en="Contact Information">Información de Contacto</h3>
+                <div class="contact-item">
+    <span class="contact-icon"><i class="far fa-envelope"></i></span>
+    <div>
+        <p class="contact-label" data-es="Email" data-en="Email">Email</p>
+        <p class="contact-value"><a href="mailto:stellahernandez912@gmail.com">stellahernandez912@gmail.com</a></p>
+    </div>
+</div>
+
+<div class="contact-item">
+    <span class="contact-icon"><i class="fas fa-phone"></i></span>
+    <div>
+        <p class="contact-label" data-es="Teléfono" data-en="Phone">Teléfono</p>
+        <p class="contact-value"><a href="tel:+50376472398">(503) 7647-2398</a></p>
+    </div>
+</div>
+
+<div class="contact-item">
+    <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+    <div>
+        <p class="contact-label" data-es="Ubicación" data-en="Location">Ubicación</p>
+        <p class="contact-value" data-es="Usulután, El Salvador" data-en="Usulután, El Salvador">Usulután, El Salvador</p>
+    </div>
+</div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <h3 class="form-title" data-es="Envíame un Mensaje" data-en="Send me a Message">Envíame un Mensaje</h3>
+                <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                    <div class="form-row">
+                        <input type="text" placeholder="Tu nombre" class="form-input" data-es="Tu nombre" data-en="Your name" required>
+                        <input type="email" placeholder="tu@email.com" class="form-input" data-es="tu@email.com" data-en="your@email.com" required>
+                    </div>
+                    <input type="text" placeholder="Asunto del mensaje" class="form-input" data-es="Asunto del mensaje" data-en="Message subject" required>
+                    <textarea placeholder="Cuéntame sobre tu proyecto..." class="form-textarea" data-es="Cuéntame sobre tu proyecto..." data-en="Tell me about your project..." rows="5" required></textarea>
+                    <button type="submit" class="btn btn-submit" data-es="Enviar Mensaje" data-en="Send Message">
+                        <span></span> Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title" data-es="Mi Portafolio" data-en="My Portfolio">Mi Portafolio</h3>
+                <p class="footer-desc" data-es="Diseñador UX/UI dedicado a crear experiencias digitales excepcionales." data-en="UX/UI Designer dedicated to creating exceptional digital experiences.">
+                    Diseñador UX/UI dedicado a crear experiencias digitales excepcionales.
+                </p>
+                <div class="footer-socials">
+            <a href="https://github.com/Estela252" class="social-link" title="GitHub">
+                <i class="fab fa-github-alt"></i></a>
+    
+            <a href="https://www.linkedin.com/in/estela-hernandez-4788352b5/" class="social-link" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+    
+            <a href="mailto:stellahernandez912@gmail.com" class="social-link" title="Email">
+                <i class="far fa-envelope"></i> 
+            </a>
+    
+    </div>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="footer-subtitle" data-es="Enlaces" data-en="Links">Enlaces</h4>
+                <ul class="footer-links">
+                    <li><a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a></li>
+                    <li><a href="#sobre-mi" data-es="Sobre Mí" data-en="About Me">Sobre Mí</a></li>
+                    <li><a href="#proyectos" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+                    <li><a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+    <h4 class="footer-subtitle" data-es="Servicios" data-en="Services">Servicios</h4>
+    <ul class="footer-links">
+        <li data-es="Diseño UX/UI" data-en="UX/UI Design">Diseño UX/UI</li>
+        <li data-es="Aplicaciones Móviles" data-en="Mobile Applications">Aplicaciones Móviles</li>
+        <li data-es="Design Systems" data-en="Design Systems">Design Systems</li>
+        <li data-es="Consultoría de Diseño" data-en="Design Consulting">Consultoría de Diseño</li>
+    </ul>
+</div>
+
+        <div class="footer-bottom">
+            <p data-es="Hecho con 🖤 por Katerin Hernández © 2025" data-en="Made with 🖤 by Katerin Hernández © 2025">
+                Hecho con 🖤 por Katerin Hernández © 2025
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
